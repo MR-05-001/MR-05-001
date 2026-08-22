@@ -1,39 +1,669 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="200" viewBox="0 0 1200 200" role="img" aria-label="YOUR_NAME — Cybersecurity Student">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1200"
+  height="300"
+  viewBox="0 0 1200 300"
+  role="img"
+  aria-label="MR-05-001 — Cybersecurity Student"
+>
 
   <defs>
+
+    <!-- ================================================= -->
+    <!-- BACKGROUND -->
+    <!-- ================================================= -->
+
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#050505"/>
-      <stop offset="60%" stop-color="#0a0a0a"/>
-      <stop offset="100%" stop-color="#160003"/>
+      <stop offset="0%" stop-color="#060812"/>
+      <stop offset="45%" stop-color="#0A0F1D"/>
+      <stop offset="100%" stop-color="#0B1020"/>
     </linearGradient>
+
+    <!-- ================================================= -->
+    <!-- AURORA GLOW -->
+    <!-- ================================================= -->
+
+    <radialGradient id="purpleGlow" cx="18%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.14"/>
+      <stop offset="45%" stop-color="#8B5CF6" stop-opacity="0.045"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="cyanGlow" cx="82%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.14"/>
+      <stop offset="45%" stop-color="#22D3EE" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="centerGlow" cx="50%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.07"/>
+      <stop offset="50%" stop-color="#6366F1" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- ================================================= -->
+    <!-- MAIN ACCENT -->
+    <!-- ================================================= -->
+
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+
+    <linearGradient id="textAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A78BFA"/>
+      <stop offset="50%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#67E8F9"/>
+    </linearGradient>
+
+    <!-- ================================================= -->
+    <!-- GRID -->
+    <!-- ================================================= -->
+
+    <pattern
+      id="grid"
+      width="36"
+      height="36"
+      patternUnits="userSpaceOnUse"
+    >
+      <path
+        d="M36 0H0V36"
+        fill="none"
+        stroke="#7C83FD"
+        stroke-width="0.5"
+        opacity="0.045"
+      />
+    </pattern>
+
+    <!-- ================================================= -->
+    <!-- GLOW -->
+    <!-- ================================================= -->
+
+    <filter
+      id="glow"
+      x="-100%"
+      y="-100%"
+      width="300%"
+      height="300%"
+    >
+      <feGaussianBlur
+        stdDeviation="5"
+        result="blur"
+      />
+
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter
+      id="smallGlow"
+      x="-100%"
+      y="-100%"
+      width="300%"
+      height="300%"
+    >
+      <feGaussianBlur
+        stdDeviation="2.5"
+        result="blur"
+      />
+
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- ================================================= -->
+    <!-- CLIP -->
+    <!-- ================================================= -->
+
     <clipPath id="clip">
-      <rect width="1200" height="200" rx="10"/>
+      <rect
+        x="0"
+        y="0"
+        width="1200"
+        height="300"
+        rx="16"
+      />
     </clipPath>
+
   </defs>
 
-  <rect width="1200" height="200" rx="10" fill="url(#bg)"/>
+
+  <!-- ===================================================== -->
+  <!-- BASE -->
+  <!-- ===================================================== -->
+
+  <rect
+    x="0"
+    y="0"
+    width="1200"
+    height="300"
+    rx="16"
+    fill="url(#bg)"
+  />
 
   <g clip-path="url(#clip)">
 
-    <rect x="0" y="0" width="1200" height="2" fill="#8b0018" opacity="0.75"/>
-    <rect x="0" y="198" width="1200" height="2" fill="#8b0018" opacity="0.75"/>
+    <!-- ambient lighting -->
 
-    <text x="600" y="90" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="46" font-weight="600" letter-spacing="0.2" fill="#f5f5f5" opacity="0">
-      YOUR_NAME
-      <animate attributeName="opacity" from="0" to="1" begin="0.15s" dur="1s" calcMode="spline" keySplines="0.25 0.1 0.25 1" fill="freeze"/>
-      <animate attributeName="y" from="104" to="90" begin="0.15s" dur="1s" calcMode="spline" keySplines="0.25 0.1 0.25 1" fill="freeze"/>
+    <rect
+      x="0"
+      y="0"
+      width="1200"
+      height="300"
+      fill="url(#purpleGlow)"
+    />
+
+    <rect
+      x="0"
+      y="0"
+      width="1200"
+      height="300"
+      fill="url(#cyanGlow)"
+    />
+
+    <rect
+      x="0"
+      y="0"
+      width="1200"
+      height="300"
+      fill="url(#centerGlow)"
+    />
+
+    <!-- subtle grid -->
+
+    <rect
+      x="0"
+      y="0"
+      width="1200"
+      height="300"
+      fill="url(#grid)"
+    />
+
+
+    <!-- ================================================= -->
+    <!-- FRAME -->
+    <!-- ================================================= -->
+
+    <rect
+      x="1"
+      y="1"
+      width="1198"
+      height="298"
+      rx="15"
+      fill="none"
+      stroke="#273043"
+      stroke-width="1"
+    />
+
+
+    <!-- ================================================= -->
+    <!-- TOP ACCENT -->
+    <!-- ================================================= -->
+
+    <rect
+      x="0"
+      y="0"
+      width="1200"
+      height="2"
+      fill="url(#accent)"
+    />
+
+
+    <!-- ================================================= -->
+    <!-- ABSTRACT LEFT GEOMETRY -->
+    <!-- ================================================= -->
+
+    <g
+      fill="none"
+      stroke="url(#accent)"
+      stroke-width="1"
+      opacity="0.35"
+    >
+
+      <path d="M55 70 H145 L190 115"/>
+      <path d="M55 230 H145 L190 185"/>
+
+      <path d="M95 70 V105 H155"/>
+      <path d="M95 230 V195 H155"/>
+
+    </g>
+
+    <g
+      fill="#8B5CF6"
+      opacity="0.8"
+      filter="url(#smallGlow)"
+    >
+      <circle cx="55" cy="70" r="2.5"/>
+      <circle cx="55" cy="230" r="2.5"/>
+      <circle cx="190" cy="115" r="2"/>
+      <circle cx="190" cy="185" r="2"/>
+    </g>
+
+
+    <!-- ================================================= -->
+    <!-- ABSTRACT RIGHT GEOMETRY -->
+    <!-- ================================================= -->
+
+    <g
+      fill="none"
+      stroke="url(#accent)"
+      stroke-width="1"
+      opacity="0.35"
+    >
+
+      <path d="M1145 70 H1055 L1010 115"/>
+      <path d="M1145 230 H1055 L1010 185"/>
+
+      <path d="M1105 70 V105 H1045"/>
+      <path d="M1105 230 V195 H1045"/>
+
+    </g>
+
+    <g
+      fill="#22D3EE"
+      opacity="0.8"
+      filter="url(#smallGlow)"
+    >
+      <circle cx="1145" cy="70" r="2.5"/>
+      <circle cx="1145" cy="230" r="2.5"/>
+      <circle cx="1010" cy="115" r="2"/>
+      <circle cx="1010" cy="185" r="2"/>
+    </g>
+
+
+    <!-- ================================================= -->
+    <!-- CENTRAL ORBIT -->
+    <!-- ================================================= -->
+
+    <g
+      transform="translate(600 55)"
+      fill="none"
+      stroke="url(#accent)"
+      opacity="0.22"
+    >
+
+      <ellipse
+        cx="0"
+        cy="0"
+        rx="44"
+        ry="14"
+        stroke-width="1"
+      />
+
+      <ellipse
+        cx="0"
+        cy="0"
+        rx="30"
+        ry="10"
+        stroke-width="1"
+      />
+
+      <circle
+        cx="0"
+        cy="0"
+        r="4"
+        fill="#A78BFA"
+        stroke="none"
+        opacity="0.8"
+      />
+
+    </g>
+
+
+    <!-- ================================================= -->
+    <!-- TITLE GLOW -->
+    <!-- ================================================= -->
+
+    <text
+      x="600"
+      y="118"
+      text-anchor="middle"
+      dominant-baseline="middle"
+      font-family="Orbitron, Arial, sans-serif"
+      font-size="56"
+      font-weight="800"
+      letter-spacing="6"
+      fill="url(#accent)"
+      opacity="0.22"
+      filter="url(#glow)"
+    >
+      MR-05-001
+
+      <animate
+        attributeName="opacity"
+        values="0.13;0.30;0.13"
+        dur="4s"
+        repeatCount="indefinite"
+      />
+
     </text>
 
-    <rect x="600" y="110" width="0" height="2" rx="1" fill="#b8001f" opacity="0">
-      <animate attributeName="opacity" from="0" to="1" begin="1.1s" dur="0.4s" fill="freeze"/>
-      <animate attributeName="x" from="600" to="530" begin="1.1s" dur="0.6s" calcMode="spline" keySplines="0.25 0.1 0.25 1" fill="freeze"/>
-      <animate attributeName="width" from="0" to="140" begin="1.1s" dur="0.6s" calcMode="spline" keySplines="0.25 0.1 0.25 1" fill="freeze"/>
+
+    <!-- ================================================= -->
+    <!-- MAIN TITLE -->
+    <!-- ================================================= -->
+
+    <text
+      x="600"
+      y="118"
+      text-anchor="middle"
+      dominant-baseline="middle"
+      font-family="Orbitron, Arial, sans-serif"
+      font-size="56"
+      font-weight="800"
+      letter-spacing="6"
+      fill="url(#textAccent)"
+    >
+      MD RAIYAN
+    </text>
+
+
+    <!-- ================================================= -->
+    <!-- SUBTLE TITLE GLITCH -->
+    <!-- ================================================= -->
+
+    <text
+      x="600"
+      y="118"
+      text-anchor="middle"
+      dominant-baseline="middle"
+      font-family="Orbitron, Arial, sans-serif"
+      font-size="56"
+      font-weight="800"
+      letter-spacing="6"
+      fill="#22D3EE"
+      opacity="0"
+    >
+      MR-05-001
+
+      <animate
+        attributeName="opacity"
+        values="0;0;0.55;0;0;0;0"
+        keyTimes="0;0.42;0.44;0.46;0.70;0.72;1"
+        dur="4.5s"
+        repeatCount="indefinite"
+      />
+
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0 0;0 0;4 0;0 0;0 0"
+        keyTimes="0;0.42;0.44;0.46;1"
+        dur="4.5s"
+        repeatCount="indefinite"
+      />
+
+    </text>
+
+
+    <!-- purple offset -->
+
+    <text
+      x="600"
+      y="118"
+      text-anchor="middle"
+      dominant-baseline="middle"
+      font-family="Orbitron, Arial, sans-serif"
+      font-size="56"
+      font-weight="800"
+      letter-spacing="6"
+      fill="#A78BFA"
+      opacity="0"
+    >
+      MR-05-001
+
+      <animate
+        attributeName="opacity"
+        values="0;0;0;0.5;0;0;0"
+        keyTimes="0;0.50;0.52;0.54;0.56;0.72;1"
+        dur="4.8s"
+        repeatCount="indefinite"
+      />
+
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="0 0;0 0;-4 0;0 0;0 0"
+        keyTimes="0;0.50;0.52;0.54;1"
+        dur="4.8s"
+        repeatCount="indefinite"
+      />
+
+    </text>
+
+
+    <!-- ================================================= -->
+    <!-- DIVIDER -->
+    <!-- ================================================= -->
+
+    <rect
+      x="535"
+      y="150"
+      width="130"
+      height="2"
+      rx="1"
+      fill="url(#accent)"
+    >
+
+      <animate
+        attributeName="width"
+        values="100;150;100"
+        dur="4s"
+        repeatCount="indefinite"
+      />
+
+      <animate
+        attributeName="x"
+        values="550;525;550"
+        dur="4s"
+        repeatCount="indefinite"
+      />
+
     </rect>
 
-    <text x="600" y="142" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="17" font-weight="400" letter-spacing="0.2" fill="#9a9a9a" opacity="0">
-      Cybersecurity Student · Aspiring Penetration Tester
-      <animate attributeName="opacity" from="0" to="1" begin="1.5s" dur="0.8s" fill="freeze"/>
+
+    <!-- ================================================= -->
+    <!-- ROLE -->
+    <!-- ================================================= -->
+
+    <text
+      x="600"
+      y="178"
+      text-anchor="middle"
+      dominant-baseline="middle"
+      font-family="Rajdhani, Arial, sans-serif"
+      font-size="21"
+      font-weight="600"
+      letter-spacing="2"
+      fill="#F8FAFC"
+    >
+      CYBERSECURITY STUDENT
     </text>
 
+
+    <!-- ================================================= -->
+    <!-- SPECIALIZATION -->
+    <!-- ================================================= -->
+
+    <text
+      x="600"
+      y="204"
+      text-anchor="middle"
+      dominant-baseline="middle"
+      font-family="Rajdhani, Arial, sans-serif"
+      font-size="15"
+      font-weight="500"
+      letter-spacing="1.7"
+      fill="#AAB4C3"
+    >
+      OFFENSIVE SECURITY • SECURITY RESEARCH
+    </text>
+
+
+    <!-- ================================================= -->
+    <!-- FOCUS AREAS -->
+    <!-- ================================================= -->
+
+    <g
+      font-family="Rajdhani, Arial, sans-serif"
+      font-size="12"
+      font-weight="600"
+      letter-spacing="1.1"
+      text-anchor="middle"
+    >
+
+      <!-- penetration testing -->
+
+      <text
+        x="340"
+        y="238"
+        fill="#A78BFA"
+      >
+        PENETRATION TESTING
+      </text>
+
+
+      <!-- red teaming -->
+
+      <text
+        x="510"
+        y="238"
+        fill="#8B5CF6"
+      >
+        RED TEAMING
+      </text>
+
+
+      <!-- CTF -->
+
+      <text
+        x="640"
+        y="238"
+        fill="#6366F1"
+      >
+        CTFs
+      </text>
+
+
+      <!-- security engineering -->
+
+      <text
+        x="815"
+        y="238"
+        fill="#22D3EE"
+      >
+        SECURITY ENGINEERING
+      </text>
+
+    </g>
+
+
+    <!-- separators -->
+
+    <g
+      stroke="#374151"
+      stroke-width="1"
+      opacity="0.8"
+    >
+      <line x1="430" y1="228" x2="430" y2="245"/>
+      <line x1="575" y1="228" x2="575" y2="245"/>
+      <line x1="705" y1="228" x2="705" y2="245"/>
+    </g>
+
+
+    <!-- ================================================= -->
+    <!-- CORNER MARKERS -->
+    <!-- ================================================= -->
+
+    <g
+      fill="none"
+      stroke="url(#accent)"
+      stroke-width="1.5"
+      opacity="0.7"
+    >
+
+      <path d="M28 60 V28 H60"/>
+      <path d="M1172 60 V28 H1140"/>
+
+      <path d="M28 240 V272 H60"/>
+      <path d="M1172 240 V272 H1140"/>
+
+    </g>
+
+
+    <!-- ================================================= -->
+    <!-- FLOATING PARTICLES -->
+    <!-- ================================================= -->
+
+    <g>
+
+      <circle
+        cx="260"
+        cy="70"
+        r="1.5"
+        fill="#A78BFA"
+        opacity="0.4"
+      >
+        <animate
+          attributeName="opacity"
+          values="0.15;0.65;0.15"
+          dur="3s"
+          repeatCount="indefinite"
+        />
+      </circle>
+
+      <circle
+        cx="940"
+        cy="85"
+        r="1.5"
+        fill="#22D3EE"
+        opacity="0.4"
+      >
+        <animate
+          attributeName="opacity"
+          values="0.65;0.15;0.65"
+          dur="4s"
+          repeatCount="indefinite"
+        />
+      </circle>
+
+      <circle
+        cx="220"
+        cy="220"
+        r="1.2"
+        fill="#6366F1"
+        opacity="0.35"
+      >
+        <animate
+          attributeName="opacity"
+          values="0.2;0.6;0.2"
+          dur="3.7s"
+          repeatCount="indefinite"
+        />
+      </circle>
+
+      <circle
+        cx="980"
+        cy="215"
+        r="1.2"
+        fill="#22D3EE"
+        opacity="0.35"
+      >
+        <animate
+          attributeName="opacity"
+          values="0.6;0.2;0.6"
+          dur="3.3s"
+          repeatCount="indefinite"
+        />
+      </circle>
+
+    </g>
+
   </g>
+
 </svg>
