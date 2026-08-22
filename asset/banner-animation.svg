@@ -1,0 +1,63 @@
+<svg viewBox="0 0 900 200" width="900" height="200" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a0000"/>
+      <stop offset="100%" stop-color="#3a0000"/>
+    </linearGradient>
+    <clipPath id="banner-clip">
+      <rect width="900" height="200" rx="10"/>
+    </clipPath>
+  </defs>
+
+  <rect width="900" height="200" rx="10" fill="url(#bg-grad)"/>
+
+  <g clip-path="url(#banner-clip)">
+
+    <!-- top and bottom accent lines -->
+    <rect x="0" y="0" width="900" height="2" fill="#ff2b4d" opacity="0.6"/>
+    <rect x="0" y="198" width="900" height="2" fill="#ff2b4d" opacity="0.6"/>
+
+    <!-- faint scanline texture -->
+    <g opacity="0.05">
+      <rect x="0" y="10" width="900" height="1" fill="#ffffff"/>
+      <rect x="0" y="30" width="900" height="1" fill="#ffffff"/>
+      <rect x="0" y="50" width="900" height="1" fill="#ffffff"/>
+      <rect x="0" y="70" width="900" height="1" fill="#ffffff"/>
+      <rect x="0" y="90" width="900" height="1" fill="#ffffff"/>
+      <rect x="0" y="110" width="900" height="1" fill="#ffffff"/>
+      <rect x="0" y="130" width="900" height="1" fill="#ffffff"/>
+      <rect x="0" y="150" width="900" height="1" fill="#ffffff"/>
+      <rect x="0" y="170" width="900" height="1" fill="#ffffff"/>
+      <rect x="0" y="190" width="900" height="1" fill="#ffffff"/>
+    </g>
+
+    <!-- moving scan sweep -->
+    <rect x="0" y="-8" width="900" height="8" fill="#ffffff" opacity="0.08">
+      <animate attributeName="y" from="-8" to="200" dur="3.2s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- glitch title: cyan ghost layer -->
+    <text x="450" y="98" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="40" font-weight="600" fill="#00e5ff" opacity="0.65">
+      WHOAMI? YOUR_NAME
+      <animate attributeName="x" values="450;446;452;448;450" keyTimes="0;0.25;0.5;0.75;1" dur="2.6s" calcMode="discrete" repeatCount="indefinite"/>
+    </text>
+
+    <!-- glitch title: red ghost layer -->
+    <text x="450" y="98" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="40" font-weight="600" fill="#ff2b4d" opacity="0.65">
+      WHOAMI? YOUR_NAME
+      <animate attributeName="x" values="450;454;447;453;450" keyTimes="0;0.2;0.45;0.7;1" dur="2.2s" calcMode="discrete" repeatCount="indefinite"/>
+    </text>
+
+    <!-- main title -->
+    <text x="450" y="98" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="40" font-weight="600" fill="#f5f5f5">
+      WHOAMI? YOUR_NAME
+    </text>
+
+    <!-- subtitle -->
+    <text x="450" y="132" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="17" fill="#cfcfcf">
+      Cybersecurity Student | Aspiring Penetration Tester
+    </text>
+
+  </g>
+</svg>
