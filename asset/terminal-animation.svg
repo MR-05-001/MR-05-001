@@ -1,0 +1,86 @@
+<svg viewBox="0 0 700 328" width="700" height="328" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <clipPath id="term-clip">
+      <rect width="700" height="328" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <!-- loop driver: fires a "begin" event every cycle so the whole scene retypes -->
+  <rect x="-10" y="-10" width="1" height="1" opacity="0">
+    <animate id="clockAnim" attributeName="opacity" values="0;0" begin="0s" dur="15.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- outer frame -->
+  <rect width="700" height="328" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+
+  <g clip-path="url(#term-clip)">
+
+    <!-- header bar -->
+    <rect x="0" y="0" width="700" height="40" fill="#161b22"/>
+    <circle cx="22" cy="20" r="6" fill="#ff5f56"/>
+    <circle cx="44" cy="20" r="6" fill="#ffbd2e"/>
+    <circle cx="66" cy="20" r="6" fill="#27c93f"/>
+    <text x="350" y="25" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#8b949e">root@kali: ~/pentest</text>
+
+    <!-- line 1: root@kali:~$ whoami -->
+    <text x="20" y="60" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="15" fill="#39d353">root@kali:~$ whoami</text>
+    <rect x="20" y="40" width="220" height="28" fill="#0d1117">
+      <animate attributeName="x" from="20" to="240" begin="clockAnim.begin+0.5s" dur="0.86s" fill="freeze"/>
+    </rect>
+
+    <!-- line 2: MR-05-001 -->
+    <text x="20" y="88" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="15" fill="#c9d1d9">MR-05-001</text>
+    <rect x="20" y="68" width="115" height="28" fill="#0d1117">
+      <animate attributeName="x" from="20" to="135" begin="clockAnim.begin+1.56s" dur="0.41s" fill="freeze"/>
+    </rect>
+
+    <!-- line 3: root@kali:~$ nmap -sV -T4 10.10.10.5 -->
+    <text x="20" y="116" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="15" fill="#39d353">root@kali:~$ nmap -sV -T4 10.10.10.5</text>
+    <rect x="20" y="96" width="398" height="28" fill="#0d1117">
+      <animate attributeName="x" from="20" to="418" begin="clockAnim.begin+2.26s" dur="1.62s" fill="freeze"/>
+    </rect>
+
+    <!-- line 4: PORT   STATE   SERVICE -->
+    <text x="20" y="144" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="15" fill="#8b949e">PORT     STATE   SERVICE</text>
+    <rect x="20" y="124" width="272" height="28" fill="#0d1117">
+      <animate attributeName="x" from="20" to="292" begin="clockAnim.begin+4.08s" dur="1.08s" fill="freeze"/>
+    </rect>
+
+    <!-- line 5: 22/tcp open ssh -->
+    <text x="20" y="172" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="15" fill="#7ee787">22/tcp   open    ssh</text>
+    <rect x="20" y="152" width="230" height="28" fill="#0d1117">
+      <animate attributeName="x" from="20" to="250" begin="clockAnim.begin+5.31s" dur="0.9s" fill="freeze"/>
+    </rect>
+
+    <!-- line 6: 80/tcp open http -->
+    <text x="20" y="200" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="15" fill="#7ee787">80/tcp   open    http</text>
+    <rect x="20" y="180" width="241" height="28" fill="#0d1117">
+      <animate attributeName="x" from="20" to="261" begin="clockAnim.begin+6.36s" dur="0.95s" fill="freeze"/>
+    </rect>
+
+    <!-- line 7: 443/tcp open https -->
+    <text x="20" y="228" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="15" fill="#7ee787">443/tcp  open    https</text>
+    <rect x="20" y="208" width="251" height="28" fill="#0d1117">
+      <animate attributeName="x" from="20" to="271" begin="clockAnim.begin+7.46s" dur="0.99s" fill="freeze"/>
+    </rect>
+
+    <!-- line 8: root@kali:~$ cat motto.txt -->
+    <text x="20" y="256" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="15" fill="#39d353">root@kali:~$ cat motto.txt</text>
+    <rect x="20" y="236" width="293" height="28" fill="#0d1117">
+      <animate attributeName="x" from="20" to="313" begin="clockAnim.begin+8.75s" dur="1.17s" fill="freeze"/>
+    </rect>
+
+    <!-- line 9: "Understand the system to defend the system." -->
+    <text x="20" y="284" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="15" font-style="italic" fill="#c9d1d9">"Understand the system to defend the system."</text>
+    <rect x="20" y="264" width="493" height="28" fill="#0d1117">
+      <animate attributeName="x" from="20" to="513" begin="clockAnim.begin+10.12s" dur="2.03s" fill="freeze"/>
+    </rect>
+
+    <!-- blinking cursor after the final line -->
+    <rect x="495" y="268" width="10" height="20" fill="#39d353" opacity="0">
+      <animate attributeName="opacity" values="0;1;0;1;0;1;0" begin="clockAnim.begin+12.34s" dur="2.6s" repeatCount="1"/>
+    </rect>
+
+  </g>
+</svg>
