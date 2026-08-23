@@ -32,49 +32,7 @@
 
 <!-- ===================== FEATURED PROJECTS ================= -->
 
-<p align="center">
-  <img
-    src="https://readme-typing-svg.demolab.com/?font=Orbitron&weight=700&size=24&duration=1&pause=999999&color=FF0033&center=true&vCenter=true&repeat=false&width=700&height=50&lines=FEATURED_PROJECTS"
-    alt="Featured Projects"
-  />
-</p>
 
-<br>
-
-<table align="center">
-<tr>
-
-<td width="33%" align="center" valign="top">
-<h3>🔴 ANZEN</h3>
-<p>Android Intent Firewall &amp; Heuristics Engine</p>
-<p>Security-focused Android project for intent interception and heuristic analysis of suspicious links.</p>
-<a href="https://github.com/MR-05-001/ANZEN">
-<img src="https://img.shields.io/badge/VIEW%20PROJECT-ff0033?style=for-the-badge&logo=github&logoColor=white" alt="View ANZEN"/>
-</a>
-</td>
-
-<td width="33%" align="center" valign="top">
-<h3>🔴 Network-Sniffer</h3>
-<p>Cross-platform Python Network Sniffer</p>
-<p>Packet capture, PCAP export and deep packet inspection for practical network analysis.</p>
-<a href="https://github.com/MR-05-001/Network-Sniffer">
-<img src="https://img.shields.io/badge/VIEW%20PROJECT-ff0033?style=for-the-badge&logo=github&logoColor=white" alt="View Network Sniffer"/>
-</a>
-</td>
-
-<td width="33%" align="center" valign="top">
-<h3>⚫ RB19</h3>
-<p>Interactive 3D Web Experience</p>
-<p>Creative web-development project featuring an interactive 3D RB19 showcase.</p>
-<a href="https://github.com/MR-05-001/RB19">
-<img src="https://img.shields.io/badge/VIEW%20PROJECT-ff0033?style=for-the-badge&logo=github&logoColor=white" alt="View RB19"/>
-</a>
-</td>
-
-</tr>
-</table>
-
----
 
 <!-- ==================== TECHNOLOGY ARSENAL ================= -->
 
