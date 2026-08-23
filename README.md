@@ -71,8 +71,6 @@
 <td align="center"><a href="https://git-scm.com/" title="Git"><img src="https://skillicons.dev/icons?i=git&theme=dark" width="55" alt="Git"/></a></td>
 <td align="center"><a href="https://github.com/" title="GitHub"><img src="https://skillicons.dev/icons?i=github&theme=dark" width="55" alt="GitHub"/></a></td>
 <td align="center"><a href="https://aws.amazon.com/" title="Amazon Web Services"><img src="https://skillicons.dev/icons?i=aws&theme=dark" width="55" alt="AWS"/></a></td>
-<td align="center"><a href="https://code.visualstudio.com/" title="Visual Studio Code"><img src="https://skillicons.dev/icons?i=vscode&theme=dark" width="55" alt="VS Code"/></a></td>
-<td align="center"><a href="https://www.figma.com/" title="Figma"><img src="https://skillicons.dev/icons?i=figma&theme=dark" width="55" alt="Figma"/></a></td>
 
 </tr>
 </table>
