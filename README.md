@@ -54,8 +54,7 @@
 <td align="center"><a href="https://www.linux.org/" title="Linux"><img src="https://skillicons.dev/icons?i=linux&theme=dark" width="55" alt="Linux"/></a></td>
 <td align="center"><a href="https://www.python.org/" title="Python"><img src="https://skillicons.dev/icons?i=py&theme=dark" width="55" alt="Python"/></a></td>
 <td align="center"><a href="https://www.gnu.org/software/bash/" title="Bash"><img src="https://skillicons.dev/icons?i=bash&theme=dark" width="55" alt="Bash"/></a></td>
-<td align="center"><a href="https://en.wikipedia.org/wiki/C_(programming_language)" title="C"><img src="https://skillicons.dev/icons?i=c&theme=dark" width="55" alt="C"/></a></td>
-<td align="center"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="JavaScript"><img src="https://skillicons.dev/icons?i=js&theme=dark" width="55" alt="JavaScript"/></a></td>
+
 
 </tr>
 </table>
